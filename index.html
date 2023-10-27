@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <meta charset='utf-8'>
+  <meta name="viewport" content="width=device-width, initial-scale=1" id="wixDesktopViewport" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Wix.com Website Builder"/>
+
+<!--this will be the church logo
+ <link rel="icon" sizes="192x192" href="https://static.wixstatic.com/media/d6811c_5713852f9ff74c96919d635990e0b739%7Emv2.jpg/v1/fill/w_192%2Ch_192%2Clg_1%2Cusm_0.66_1.00_0.01/d6811c_5713852f9ff74c96919d635990e0b739%7Emv2.jpg" type="image/jpeg"/>
+--> 
+<!-- This code sets metadata, including page title, canonical URL, and social media sharing information for the webpage.--> 
+<title>Home</title>
+  <link rel="canonical" href="https://www.atlantabethelacifm.org"/>
+  <meta name="robots" content="noindex"/>
+  <meta property="og:title" content="Home"/>
+  <meta property="og:url" content="https://www.atlantabethelacifm.org"/>
+  <meta property="og:site_name" content="Atlantabethelacifm"/>
+  <meta property="og:type" content="website"/>
+  <link rel="alternate" href="https://www.atlantabethelacifm.org/blog-feed.xml" type="application/rss+xml" title="Atlantabethelacifm - RSS"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="Home"/>
+
+</head>
+
+<body>
+    <!--# this navigation bar will be the same on every page-->
+    <nav>
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">WATCH</a></li>
+            <li><a href="#">ABOUT US</a></li>
+            <li>
+                <a href="#">Ministries</a>
+                <ul>
+                    <li><a href="#">Youth Ministries</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Blog</a></li>
+        </ul>
+    </nav>
+
+
+    <div class="slider-container">
+        <img class="slider-image" src="image1.jpg" alt="Image 1">
+        <img class="slider-image" src="image2.jpg" alt="Image 2">
+        <img class="slider-image" src="image3.jpg" alt="Image 3">
+        <!-- Add more images here -->
+
+        <button class="slider-button prev" onclick="changeSlide(-1)">Previous</button>
+        <button class="slider-button next" onclick="changeSlide(1)">Next</button>
+    </div>
+
+    <!-- this will be the image slider on the home page section-->
+    <script>
+        let slideIndex = 1;
+        showSlide(slideIndex);
+
+        function changeSlide(n) {
+            showSlide(slideIndex += n);
+        }
+
+        function showSlide(n) {
+            let i;
+            const slides = document.getElementsByClassName("slider-image");
+
+            if (n > slides.length) {
+                slideIndex = 1;
+            }
+
+            if (n < 1) {
+                slideIndex = slides.length;
+            }
+
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+
+            slides[slideIndex - 1].style.display = "block";
+        }
+        </script>
+    
+    <!-- this is what goes at the bottom of the all the page -->
+    <footer>
+        <div class="footer-content">
+            <div class="contact-info">
+                <p>123 Main Street, City, Country</p>
+                <p>Phone: (123) 456-7890</p>
+                <p>Email: info@example.com</p>
+            </div>
+            <div class="social-media">
+                <a href="https://facebook.com/yourpage"><i class="fab fa-facebook"></i></a>
+                <a href="https://twitter.com/yourhandle"><i class="fab fa-twitter"></i></a>
+                <a href="https://instagram.com/youraccount"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2023 Website Name. All rights reserved.</p>
+        </div>
+    </footer>
+    
+</body>
+</html>
+
+
+
