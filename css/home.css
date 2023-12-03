@@ -1,0 +1,165 @@
+/* General Body Styling */
+body {
+    font-family: 'Times New Roman', Times, sans-serif;
+    margin: 0;
+    padding: 10;
+    background-color: #f4f4f4;
+}
+
+/* Navigation Bar Styling */
+nav {
+    background-color: #333;
+    color: white;
+    padding: 15px 30px;
+    text-align: right;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    padding: flex;
+}
+
+/* Hide the dropdown content by default */
+.dropdown-content{
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+/* Styles for the dropdown items */
+.dropdown-content a{
+    color: black;
+    padding: 5px 16px;
+    text-decoration: none;
+    display: block;
+    white-space: nowrap;
+}
+
+/* Show the dropdown on hover */
+.dropdown:hover .dropdown-content{
+    display: inline-block;
+}
+
+/* Optional: Change dropdown links color on hover */
+.dropdown-content a:hover{
+    background-color: #419ddf;
+}
+
+.arrow{
+    display: inline-block;
+    margin-left: 5px;
+}
+
+nav ul li {
+    display: inline-block;
+    position: relative;
+    margin-right: 20px;
+}
+
+nav a{
+    display: block;
+    padding: 8px 15px;
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Dropdown Menu Styling */
+nav ul li ul {
+    display: list-item;
+    position: absolute;
+    background-color: #555;
+}
+
+nav ul li:hover ul {
+    display: block;
+}
+
+nav ul li ul li {
+    display: block;
+    margin-right: 0;
+}
+
+/* Slider Container */
+.slider-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+.slider-image {
+    width: 100%;
+    display: none; /* Hide images by default */
+}
+
+/* Slider Buttons */
+.slider-button {
+    position: absolute;
+    top: 50%;
+    background-color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    transform: translateY(-50%);
+}
+
+#header-image{
+    position: relative;
+    border-image-outset: 10px;
+  
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.social-media a {
+    color: white;
+    margin: 0 10px;
+    font-size: 24px;
+}
+
+.social-media a:hover {
+    color: #ddd;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    nav ul li {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+    }
+}
