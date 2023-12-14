@@ -7,9 +7,6 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="generator" content="Wix.com Website Builder"/>
 
-<!--this will be the church logo
- <link rel="icon" sizes="192x192" href="https://static.wixstatic.com/media/d6811c_5713852f9ff74c96919d635990e0b739%7Emv2.jpg/v1/fill/w_192%2Ch_192%2Clg_1%2Cusm_0.66_1.00_0.01/d6811c_5713852f9ff74c96919d635990e0b739%7Emv2.jpg" type="image/jpeg"/>
---> 
 <!-- This code sets metadata, including page title, canonical URL, and social media sharing information for the webpage.--> 
 <title>Home</title>
   <link rel="icon" type="image/x-icon" href="C:\Users\kishoa\Downloads\Atlanta-websitechurch\Project-Website\images\favicon\apostolic-church.ico">
@@ -35,17 +32,28 @@
   <meta name="twitter:card" content="summary_large_image"/>
   <meta name="twitter:title" content="Home"/>
 
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
   <!-- Link to the external CSS file -->
   <link rel="stylesheet" type="text/css" href="C:\Users\kishoa\Downloads\Atlanta-websitechurch\Project-Website\styles\home.css">
 
 >>>>>>> Stashed changes
+=======
+ <!--this will be the church logo
+ <link rel="icon" sizes="192x192" href="https://static.wixstatic.com/media/d6811c_5713852f9ff74c96919d635990e0b739%7Emv2.jpg/v1/fill/w_192%2Ch_192%2Clg_1%2Cusm_0.66_1.00_0.01/d6811c_5713852f9ff74c96919d635990e0b739%7Emv2.jpg" type="image/jpeg"/>
+-->  
+>>>>>>> 88087f049b2b33ff24a57ac5f52b4e4fa630b7eb
 </head>
 
+<!------------------------------------------------------------------------------------------------>
+<!--# this navigation bar will be the same on every page-->
 <body>
+<<<<<<< HEAD
 <<<<<<< Updated upstream
     <!--# this navigation bar will be the same on every page-->
+=======
+>>>>>>> 88087f049b2b33ff24a57ac5f52b4e4fa630b7eb
     <nav>
         <ul>
             <li><a href="#">HOME</a></li>
@@ -57,12 +65,14 @@
                     <li><a href="#">Youth Ministries</a></li>
                 </ul>
             </li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Blog</a></li>
         </ul>
     </nav>
+<!------------------------------------------------------------------------------------------>
 
 
+<!------------------------------------------------------------------------------------------>
+    <!-- this will be the image slider on the home page section-->
+    
     <div class="slider-container">
         <img class="slider-image" src="image1.jpg" alt="Image 1">
         <img class="slider-image" src="image2.jpg" alt="Image 2">
@@ -73,36 +83,33 @@
         <button class="slider-button next" onclick="changeSlide(1)">Next</button>
     </div>
 
-    <!-- this will be the image slider on the home page section-->
-    <script>
-        let slideIndex = 1;
-        showSlide(slideIndex);
+<!------------------------------------------------------------------------------------------>    
 
-        function changeSlide(n) {
-            showSlide(slideIndex += n);
-        }
+  
 
-        function showSlide(n) {
-            let i;
-            const slides = document.getElementsByClassName("slider-image");
+<!----------------------------------------------------------------------------------------------------->
+    <!-- this will be the section for the church's announement and info box, which will be side by side-->
+    <div class="container">
+        <div class="box">
+            <h1>Announcements</h1>
+            <p>Announcement 1</p>
+            <p>Announcement 2</p>
+            <p>Announcement 3</p>
+            <p>Annoncement 4</p>
+        </div>
+        <div class="box">
+            <h1>Info</h1>
+            <p>Info 1</p>
+            <p>Info 2</p>
+            <p>Info 3</p>
+            <p>Info 4</p>
+        </div>
 
-            if (n > slides.length) {
-                slideIndex = 1;
-            }
-
-            if (n < 1) {
-                slideIndex = slides.length;
-            }
-
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-
-            slides[slideIndex - 1].style.display = "block";
-        }
-        </script>
+<!----------------------------------------------------------------------------------------------------->
     
-    <!-- this is what goes at the bottom of the all the page -->
+
+<!------------------------------------------------------------------------------------------> 
+<!-- this is what goes at the bottom of the all the page. This is the footer -->
     <footer>
         <div class="footer-content">
             <div class="contact-info">
