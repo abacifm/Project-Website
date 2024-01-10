@@ -88,7 +88,7 @@ body, html {
     padding: 50px;
     border: 1px solid #ccc;
     text-align: center;
-    background-color: #002366;
+    background-color: #022f5e;
 }
 .box1 h1,
 .box2 h1 {
@@ -102,7 +102,7 @@ body, html {
 }
 
 .footer {
-    background-color: #002366;
+    background-color: #022f5e;
     color: white;
     text-align: center;
     padding-top: 10px;
@@ -122,16 +122,71 @@ body, html {
     /* Push contact info to the bottom */
     margin-top: 0px;
 }
+
 .contact-info p {
     margin: 0;
+    font-size: small;
+    text-align: left;
+    margin-left: 20px;
+}
+
+.service-times {
+    text-align: left;
+    margin-left: auto; /* Push contact info to the right */
+    /* Push contact info to the bottom */
+    margin-top: 0px;
+}
+
+.service-times p {
+    margin: 0;
+    font-size: small;
+    text-align: left;
+    margin-left: 400px;
 }
 
 .social-media {
     margin-left: auto; /* Push social media to the right */
+    /* Push social media to the bottom */
+    padding: 10px;
+}
+.social-media a {
+    margin-left: 15px;
 }
 
 /* Move the copyright to the bottom */
 .copyright {
     margin-top: auto;
     text-align: left;
+}
+
+.fa {
+    display: inline-flex; /* Enable vertical and horizontal centering */
+    justify-content: center; /* Center icon horizontally */
+    align-items: center; /* Center icon vertically */
+    width: 30px; /* Adjust width for the circle */
+    height: 30px; /* Adjust height for the circle */
+    border-radius: 50%; /* Create a perfect circle */
+    padding: 0; /* Remove padding to fit within the circle */
+    font-size: 18px; /* Adjust font size for better visibility */
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-youtube {
+    background: #bb0000;
+    color: white;
 }

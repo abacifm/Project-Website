@@ -1,0 +1,161 @@
+body {
+    display: flex; /* Enable Flexbox layout */
+    flex-direction: column; /* Column arrangement */
+    min-height: 100vh; /* Ensure full viewport height */
+    margin: 0;
+    padding: 0;
+  }
+  
+html {
+    height: 100%;
+}
+
+#header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+#logo-container {
+    display: flex;
+    align-items: center;
+}
+
+#logo {
+    margin-right: 10px;
+}
+
+#title-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+#title-line1,
+#title-line2 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 10px;
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: blue;
+}
+
+#main-content h1,p {
+    justify-content: center;
+}
+
+.footer {
+    background-color: #022f5e;
+    color: white;
+    text-align: center;
+    padding-top: 5px;
+    margin-top: auto; 
+}
+
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-info {
+    text-align: center;
+    margin-left: auto; /* Push contact info to the right */
+    /* Push contact info to the bottom */
+    margin-top: 0px;
+}
+
+.contact-info p {
+    margin: 0;
+    font-size: small;
+    text-align: left;
+    margin-left: 20px;
+}
+
+.service-times {
+    text-align: left;
+    margin-left: auto; /* Push contact info to the right */
+    /* Push contact info to the bottom */
+    margin-top: 0px;
+}
+
+.service-times p {
+    margin: 0;
+    font-size: small;
+    text-align: left;
+    margin-left: 400px;
+}
+
+
+.social-media {
+    margin-left: auto; /* Push social media to the right */
+    /* Push social media to the bottom */
+    padding: 10px;
+}
+.social-media a {
+    margin-left: 15px;
+}
+
+.fa {
+    display: flex; /* Enable vertical and horizontal centering */
+    justify-content: center; /* Center icon horizontally */
+    align-items: center; /* Center icon vertically */
+    width: 20px; /* Adjust width for the circle */
+    height: 20px; /* Adjust height for the circle */
+    border-radius: 50%; /* Create a perfect circle */
+    padding: 0; /* Remove padding to fit within the circle */
+    font-size: 16px; /* Adjust font size for better visibility */
+    text-decoration: none;
+    margin: 5px; /* Create spacing between icons */
+  }
+  
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  .social-media a {
+    text-align: center; /* Align icons within their container */
+  }
+  
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  
+  .fa-youtube {
+    background: #bb0000;
+    color: white;
+  }
+  
+
+/* Move the copyright to the bottom */
+.copyright {
+    margin-top: auto;
+    text-align: left;
+}
