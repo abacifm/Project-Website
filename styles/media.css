@@ -1,3 +1,152 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+#header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+#logo-container {
+    display: flex;
+    align-items: center;
+}
+
+#logo {
+    margin-right: 10px;
+}
+
+#title-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+#title-line1,
+#title-line2 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 10px;
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: blue;
+}
+
+.slider-placeholder {
+    width: 100%;
+    height: 400px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .slider-placeholder {
+        height: 300px;
+    }
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+
+.box-container {
+    display: flex;
+}
+
+.box1,
+.box2 {
+    flex: 1;
+    margin: 10px;
+    padding: 50px;
+    border: 1px solid #ccc;
+    text-align: center;
+    background-color: #002366;
+}
+.box1 h1,
+.box2 h1 {
+    color: #fcf9f9;
+}
+
+.box1 p,
+.box2 p {
+    margin: 10px 0;
+    color: #fcf9f9;
+}
+
+.footer {
+    background-color: #002366;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    margin-top: auto;
+
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-info {
+    text-align: center;
+    margin-left: auto; /* Push contact info to the right */
+    /* Push contact info to the bottom */
+    margin-top: 0px;
+}
+.contact-info p {
+    margin: 0;
+}
+
+.social-media {
+    margin-left: auto; /* Push social media to the right */
+}
+
+/* Move the copyright to the bottom */
+.copyright {
+    margin-top: auto;
+    text-align: left;
+}
+
+.about-us {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.about-title {
+    text-align: center;
+    margin-bottom: 20px;
+}
