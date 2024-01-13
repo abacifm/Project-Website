@@ -73,11 +73,21 @@
         </nav>
     </div>
 
-
+    <!-- Link to the external JavaScript file -->
+    <script src="./scripts/home.js"></script>
     <!-- Image Slider Placeholder -->
-    <div class="slider-placeholder">
-        <p>Image Slider Placeholder</p>
+    <div class="slider">
+        <img id="img-1" src="./images/main.jpg" alt="Image 1"/>
+        <img id="img-2" src="./images/kid.jpg" alt="Image 2"/>
+        <img id="img-3" src="./images/Mothers.jpg" alt="Image 3"/>
+        <img id="img-4" src="./images/Fathers.jpg" alt="Image 4"/>
     </div>
+    <div class="navigation-button">
+        <span class="dot active" onclick="changeSlide(0)"></span>
+        <span class="dot" onclick="changeSlide(1)"></span>
+        <span class="dot" onclick="changeSlide(2)"></span>
+    </div>
+    
 
     <!-- Announcements and Info Boxes -->
     <div class="box-container">
@@ -127,6 +137,7 @@
         </footer>
     </div>
 
+    
 </body>
 
 </html>
