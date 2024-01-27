@@ -1,29 +1,42 @@
-// this will be the image slider on the home page section
-var imgs = document.querySelectorAll('.slider img');
-var dots = document.querySelectorAll('.dot');
-var currentImg = 0; // index of the first image 
-var timer; // initialize timer variable
-const interval = 3000; // duration(speed) of the slider
+document.addEventListener('DOMContentLoaded', function () {
+  const slides = document.querySelector('.slides');
+  const prevBtn = document.querySelector('.prev');
+  const nextBtn = document.querySelector('.next');
 
-function changeSlide(n) {
-  for (var i = 0; i < imgs.length; i++) { // reset
-    imgs[i].style.opacity = 0;
-    dots[i].classList.remove('active');
+  let currentIndex = 0;
+  let slideInterval;
+
+  // Function to show the current slide
+  function showSlide(index) {
+      const offset = -index * 100 + '%';
+      slides.style.transform = 'translateX(' + offset + ')';
   }
 
-  currentImg = (n !== undefined) ? n : (currentImg + 1) % imgs.length; // update the index number
+  // Function to show the next slide
+  function showNextSlide() {
+      currentIndex = (currentIndex + 1) % slides.children.length;
+      showSlide(currentIndex);
+  }
 
-  imgs[currentImg].style.opacity = 1;
-  dots[currentImg].classList.add('active');
-}
+  // Event listener for the previous button
+  prevBtn.addEventListener('click', function () {
+      currentIndex = (currentIndex - 1 + slides.children.length) % slides.children.length;
+      showSlide(currentIndex);
+  });
 
-function startSlider() {
-  timer = setInterval(changeSlide, interval);
-}
+  // Event listener for the next button
+  nextBtn.addEventListener('click', showNextSlide);
 
-function stopSlider() {
-  clearInterval(timer);
-}
+  // Auto slide every 5000 milliseconds (5 seconds)
+  slideInterval = setInterval(showNextSlide, 5000);
 
-changeSlide(); // Start the slideshow immediately
-startSlider(); // Set interval for automatic changes
+  // Pause the auto slide when mouse enters the slider
+  slides.addEventListener('mouseenter', function () {
+      clearInterval(slideInterval);
+  });
+
+  // Resume auto slide when mouse leaves the slider
+  slides.addEventListener('mouseleave', function () {
+      slideInterval = setInterval(showNextSlide, 5000);
+  });
+});
