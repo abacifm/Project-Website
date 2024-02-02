@@ -706,6 +706,12 @@ body, html {
   padding-left: 95px;
 }
 
+.rectangle {
+  height: 300px;
+  width: 500px;
+  background-color: #555;
+}
+
 #rectangle-container {
   display: block;
   margin-left: auto;
@@ -714,11 +720,11 @@ body, html {
 
 }
 #bottom-padding{
-  height: 100px;
+  height: 500px;
 
 }
 #bottom-padding2{
-  height: 270px;
+  height: 300px;
 }
 
 #rectangle {
