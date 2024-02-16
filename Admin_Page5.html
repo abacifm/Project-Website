@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/admin_Page5.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+
+    <div id="header-container">
+        <div id="logo-container">
+            <!-- <img id="logo"
+                src="C:\Users\kishoa\Downloads\Atlanta-websitechurch\Project-Website\images\apostolic-church-logo.png"
+                alt="Atlanta Bethel Apostolic Church Logo" width="100" height="100"> -->
+
+ <!-- Using relative path is best coding practice -->
+                <img src="./images/apostolic-church-logo.png" alt="Atlanta Bethel Apostolic Church Logo" width="100" height="100">
+            <div id="title-container">
+                <p id="title-line1">ATLANTA BETHEL APOSTOLIC CHURCH</p>
+                <p id="title-line2">INTERNATIONAL FELLOWSHIP MINISTRY</p>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <button><li><a href="Home.html"><Log-out>Log-out</Log-out></a></li></button>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="container">
+      <form action="/action_page.php">
+
+        <label for="country">Add Announcement</label>
+        <select id="country" name="country">
+          <option value="Text">Text</option>
+          <option value="Image">Image</option>
+        </select>
+
+        <label for="birthday">Announcement date:</label>
+        <br/>
+        <br/>
+        <input type="date" id="birthday" name="birthday">
+        <span>to</span>
+        <input type="date" id="birthday" name="birthday">
+        <br/>
+        <br/>
+
+        <label for="subject">Enter Message</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+        <label for="lname">Enter Link</label>
+        <input type="text" id="lname" name="lastname" placeholder="https://...">
+
+        <input type="submit" value="Save">
+        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        <input type="submit" value="Post">
+
+      </form>
+    </div>
+
+    </body>
+</html>
