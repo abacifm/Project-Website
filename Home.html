@@ -11,10 +11,6 @@
     <!-- This code sets metadata, including page title, canonical URL, and social media sharing information for the webpage.-->
     <title>Home</title>
 
- <!-- Using relative path is best coding practice -->
-
-    <!-- <link rel="icon" type="image/x-icon" href="C:\Users\kishoa\Downloads\Atlanta-websitechurch\Project-Website\images\favicon\apostolic-church.ico"> -->
-    <img src="./images/favicon/apostolic-church.ico" alt="icon">
 
     <!-- Canonical Link -->
     <link rel="canonical" href="https://www.atlantabethelacifm.org" />
@@ -75,12 +71,19 @@
         </nav>
     </div>
 
-
+    
     <!-- Image Slider Placeholder -->
-    <div class="slider-placeholder">
-        <p>Image Slider Placeholder</p>
+    <div class="slider">
+        <div class="slides">
+            <div class="slide"><img class="slide-img" src="./images/main.jpg" alt="Image 1"/> </div>
+            <div class="slide"><img class="slide-img" src="./images/kid.jpg" alt="Image 2"/> </div>
+            <div class="slide"><img class="slide-img" src="./images/Mothers.jpg" alt="Image 3"/> </div>
+            <div class="slide"><img class="slide-img" src="./images/Fathers.jpg" alt="Image 4"/> </div>
+        </div>
+        <button class="prev">Previous</button>
+        <button class="next">Next</button>
     </div>
-
+   
     <!-- Announcements and Info Boxes -->
     <div class="box-container">
         <div class="box1">
@@ -103,17 +106,25 @@
     <div class="footer">
         <footer>
             <div class="footer-content">
+                <div class = "service-times">
+                    <p>SERVICE TIMES</p>
+                    <p>SUNDAY WORSHIP SERVICE</p>
+                    <p>8:30AM |10:00 AM - 12:00 PM</p>
+                </div>
+                
                 <div class="contact-info">
                     <p>CONTACT INFO</p>
                     <p>PHONE (770)491-0228:</p>
                     <p>Email: info@atlchurch.com</p>
                     <p>OFFICE HOURS: MONDAY - FRIDAY |8:30 AM - 4:30 PM </p>
                 </div>
+
                 <div class="social-media">
-                    <a href="https://facebook.com/yourpage"><i class="fab fa-facebook"></i></a>
-                    <a href="https://twitter.com/yourhandle"><i class="fab fa-twitter"></i></a>
-                    <a href="https://instagram.com/youraccount"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-youtube"></a>
                 </div>
+
             </div>
             <div class="copyright">
                 <p>&copy; 2023 ATLANTA BETHEL APOSTOLIC CHURCH. All rights reserved.</p>
@@ -121,6 +132,8 @@
         </footer>
     </div>
 
+    <!-- Link to the external JavaScript file -->
+    <script src="./scripts/home.js"></script>
 </body>
 
 </html>
