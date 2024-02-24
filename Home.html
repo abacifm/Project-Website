@@ -11,10 +11,7 @@
     <!-- This code sets metadata, including page title, canonical URL, and social media sharing information for the webpage.-->
     <title>Home</title>
 
-    <!-- Using relative path is best coding practice -->
-    <!-- Add icon library -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
+
     <!-- Canonical Link -->
     <link rel="canonical" href="https://www.atlantabethelacifm.org" />
 
@@ -55,7 +52,7 @@
             <!-- <img id="logo"
                 src="C:\Users\kishoa\Downloads\Atlanta-websitechurch\Project-Website\images\apostolic-church-logo.png"
                 alt="Atlanta Bethel Apostolic Church Logo" width="100" height="100"> -->
-                
+
  <!-- Using relative path is best coding practice -->
                 <img src="./images/apostolic-church-logo.png" alt="Atlanta Bethel Apostolic Church Logo" width="100" height="100">
             <div id="title-container">
@@ -69,16 +66,24 @@
                 <li><a href="About.html">ABOUT US</a></li>
                 <li><a href="Ministries.html">MINISTRIES</a></li>
                 <li><a href="Watch.html">WATCH</a></li>
+
             </ul>
         </nav>
     </div>
 
-
+    
     <!-- Image Slider Placeholder -->
-    <div class="slider-placeholder">
-        <p>Image Slider Placeholder</p>
+    <div class="slider">
+        <div class="slides">
+            <div class="slide"><img class="slide-img" src="./images/main.jpg" alt="Image 1"/> </div>
+            <div class="slide"><img class="slide-img" src="./images/kid.jpg" alt="Image 2"/> </div>
+            <div class="slide"><img class="slide-img" src="./images/Mothers.jpg" alt="Image 3"/> </div>
+            <div class="slide"><img class="slide-img" src="./images/Fathers.jpg" alt="Image 4"/> </div>
+        </div>
+        <button class="prev">Previous</button>
+        <button class="next">Next</button>
     </div>
-
+   
     <!-- Announcements and Info Boxes -->
     <div class="box-container">
         <div class="box1">
@@ -127,6 +132,8 @@
         </footer>
     </div>
 
+    <!-- Link to the external JavaScript file -->
+    <script src="./scripts/home.js"></script>
 </body>
 
 </html>
